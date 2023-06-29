@@ -1,52 +1,45 @@
 @media screen and (min-width: 428px) {
     .container {
         max-width: 428px;
-    
-    .features-item {
-        max-width: 398px;
+
+        .features-item {
+            max-width: 398px;
+        }
     }
 }
-}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
     }
-    .header-menu-bottom {
-        display: flex;
-        gap: 40px;
-        }
-    .header-contacts {
-        gap: 40px;
-        margin-left: auto;
-        font-style: normal;
-        display: flex;
-        }
-    .header-link-contact {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--text);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    .basis {
+.header-menu-bottom {
+    display: flex;
+    gap: 40px;
+}
+.header-contacts {
+    gap: 40px;
+    margin-left: auto;
+    font-style: normal;
+    display: block;
+}
+.basis {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
-        }
+                rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
+    }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .basis {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/people-office-tab-x.jpg);
-            }
+                    rgba(46, 47, 66, 0.7)), url(../images/people-office-tab-x.jpg);
         }
+    }
     .title {
         font-size: 56px;
         line-height: 1.07;
         max-width: 496px;
         margin-bottom: 36px;
-        }
+    }
     .features-item {
         max-width: unset;
         width: calc((100% - 24px) / 2);
@@ -55,60 +48,71 @@
         display: flex;
         flex-wrap: wrap;
         gap: 72px 24px;
-        }
-        .worker {
-            width: calc((100% - 24px) / 2);
-        }
-        .team-img {
-            gap: 24px;
-        }
+    }
+    .worker {
+        width: calc((100% - 24px) / 2);
+    }
+    .team-img {
+        gap: 24px;
+    }
+
     .worker-container {
         max-width: 584px;
     }
+
     .customers {
         max-width: 584px;
-     }
+    }
+
     .client {
-         gap: 72px 24px;
-        }
+        gap: 72px 24px;
+    }
     .client-item {
         width: calc((100% - 48px) / 3);
+    }
+    .container-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 584px;
+        align-items: baseline;
+        gap: 72px 24px;
         }
+    .footer-base {
+        text-align: left;
+    }
+    .subscribe {
+        text-align: left;
+    }
+    .footer-form {
+        flex-direction: row;
+}
 }
 @media screen and (min-width: 1158px) {
     .container {
-       max-width: 1158px;
+        max-width: 1158px;
     }
-        .header-contacts {
-            gap: 40px;
-            margin-left: auto;
-            font-style: normal;
-            display: flex;
-        }
-    .header-link-contact {
-        font-weight: 400;
-        }
     .basis {
         padding: 188px 0;
         max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-        }
+                rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-     .basis {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/people-office-x.jpg);
+        .basis {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)), url(../images/people-office-x.jpg);
+        }
     }
-}
     .title {
         margin-bottom: 48px;
-        }
+    }
     .features-item {
         max-width: unset;
         width: calc((100% - 72px) / 4);
     }
+
     .features-background {
         display: flex;
         height: 112px;
@@ -119,6 +123,7 @@
         align-items: center;
         justify-content: center;
     }
+
     .features {
         font-weight: 500;
         font-size: 20px;
@@ -128,49 +133,67 @@
         margin-bottom: 8px;
         text-align: left;
     }
+
     .icon-features {
         display: flex;
     }
+
     .main-features-list {
         display: flex;
         flex-wrap: nowrap;
         gap: 24px;
     }
-        .main-doing {
-            display: flex;
-            padding-bottom: 120px;
-        }
-        .img-working {
-            background-color: var(--modal-background);
-            width: calc((100% - 24px) / 3);
-        }
-        .what-doing {
-            font-size: 36px;
-            line-height: 1.11;
-            text-align: center;
-            letter-spacing: 0.02em;
-            text-transform: capitalize;
-            color: var(--dark);
-            margin-bottom: 72px;
-        }
-        .img {
-            display: flex;
-            gap: 24px;
-        }
-        .team {
-         padding: 120px 0;
-                }
-        .worker {
-            width: calc((100% - 72px) / 4);
-                }
-        .customers {
-            padding: 120px 15px;
-            max-width: 1128px;
-        }
-        .client {
-            gap: 24px;
-                }
-        .client-item {
-            width: calc((100% - 120px) / 6);
-                }
+
+    .main-doing {
+        display: flex;
+        padding-bottom: 120px;
+    }
+
+    .img-working {
+        background-color: var(--modal-background);
+        width: calc((100% - 24px) / 3);
+    }
+
+    .what-doing {
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--dark);
+        margin-bottom: 72px;
+    }
+
+    .img {
+        display: flex;
+        gap: 24px;
+    }
+
+    .team {
+        padding: 120px 0;
+    }
+
+    .worker {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .customers {
+        padding: 120px 15px;
+        max-width: 1128px;
+    }
+
+    .client {
+        gap: 24px;
+    }
+
+    .client-item {
+        width: calc((100% - 120px) / 6);
+    }
+    .container-footer {
+        display: flex;
+        align-items: baseline;
+}
+  .footer-base {
+      margin-right: 120px;
+  }
 }
