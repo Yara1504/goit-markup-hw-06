@@ -1,11 +1,17 @@
 @media screen and (min-width: 428px) {
     .container {
         max-width: 428px;
-
-        .features-item {
-            max-width: 398px;
-        }
     }
+    .header-container {
+        max-width: 428px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .features-item {
+        max-width: 398px;
+        }
 }
 
 @media screen and (min-width: 768px) {
@@ -78,13 +84,24 @@
         gap: 72px 24px;
         }
     .footer-base {
+        align-items: flex-start;
+        margin-right: 24px;
+    }
+    .social-media {
         text-align: left;
     }
     .subscribe {
         text-align: left;
-    }
-    .footer-form {
-        flex-direction: row;
+        }
+.footer-label {
+    width: 264px;
+}
+.footer-sub {
+    align-items: unset;
+}
+.footer-form {
+    flex-direction: row;
+    gap: 24px;
 }
 }
 @media screen and (min-width: 1158px) {
@@ -181,19 +198,15 @@
         padding: 120px 15px;
         max-width: 1128px;
     }
-
     .client {
         gap: 24px;
     }
-
     .client-item {
         width: calc((100% - 120px) / 6);
     }
     .container-footer {
         display: flex;
         align-items: baseline;
+        padding: 100px 15px 100px 15px;
 }
-  .footer-base {
-      margin-right: 120px;
-  }
 }
