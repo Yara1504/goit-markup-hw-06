@@ -23,12 +23,10 @@
     .logo {
       margin-right: 120px;
     }
-
 .header-menu-bottom {
     display: flex;
     gap: 40px;
 }
-
 .header-contacts {
     display: flex;
 }
@@ -116,23 +114,37 @@
     .subscribe {
         text-align: left;
         }
+
     .footer-button {
-        min-width: 165px;
+    min-width: 165px;
+    margin: unset;
     }
 .footer-label {
     width: 264px;
 }
-.footer-sub {
-    align-items: unset;
-}
 .footer-form {
     flex-direction: row;
-    gap: 24px;
 }
 }
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
+    }
+    .header-container {
+        width: 1158px;
+    }
+    .logo {
+        margin-right: 76px;
+    }
+    .header-contacts {
+        gap: 40px;
+        margin-left: auto;
+        font-style: normal;
+    }
+    .contacts-list {
+         display: flex;
+         flex-direction: row;
+         gap: 40px;
     }
     .basis {
         padding: 188px 0;
@@ -180,23 +192,19 @@
     .icon-features {
         display: flex;
     }
-
     .main-features-list {
         display: flex;
         flex-wrap: nowrap;
         gap: 24px;
     }
-
     .main-doing {
         display: flex;
         padding-bottom: 120px;
     }
-
     .img-working {
         background-color: var(--modal-background);
         width: calc((100% - 24px) / 3);
     }
-
     .what-doing {
         font-size: 36px;
         line-height: 1.11;
@@ -206,20 +214,16 @@
         color: var(--dark);
         margin-bottom: 72px;
     }
-
     .img {
         display: flex;
         gap: 24px;
     }
-
     .team {
         padding: 120px 0;
     }
-
     .worker {
         width: calc((100% - 72px) / 4);
     }
-
     .customers {
         padding: 120px 15px;
         max-width: 1128px;
@@ -230,10 +234,19 @@
     .client-item {
         width: calc((100% - 120px) / 6);
     }
-    .container-footer {
-        display: flex;
-        align-items: baseline;
-        padding: 100px 15px 100px 15px;
-        max-width: 1158px;
+    footer {
+      padding: 100px 0;
+    }
+.container-footer {
+    flex-wrap: nowrap;
 }
+  .footer-base {
+    margin-right: 120px;
+  }
+  .social {
+    margin-right: 80px;
+  }
+  .footer-sub {
+    width: unset;
+  }
 }
