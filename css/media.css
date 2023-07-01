@@ -7,6 +7,9 @@
         padding-left: 16px;
         padding-right: 16px;
     }
+    .mob-link-tel {
+        font-size: 36px;
+        }
     .soc-mob {
         justify-content: center;
         gap: 56px;
@@ -14,6 +17,14 @@
     .features-item {
         max-width: 398px;
         }
+        .modal {
+            width: 392px;
+        }
+}
+@media screen and (max-width: 767px) {
+    .header-container {
+        padding: 24px 16px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -67,6 +78,9 @@
         max-width: 496px;
         margin-bottom: 36px;
     }
+    .features {
+        text-align: left;
+    }
     .features-item {
         max-width: unset;
         width: calc((100% - 24px) / 2);
@@ -87,7 +101,7 @@
         max-width: 584px;
     }
 
-    .customers {
+    .container-customers {
         max-width: 584px;
     }
 
@@ -106,7 +120,6 @@
         }
     .footer-base {
         align-items: flex-start;
-        margin-right: 24px;
     }
     .social-media {
         text-align: left;
@@ -124,6 +137,9 @@
 }
 .footer-form {
     flex-direction: row;
+}
+.modal {
+    width: 408px;
 }
 }
 @media screen and (min-width: 1158px) {
@@ -146,6 +162,11 @@
          flex-direction: row;
          gap: 40px;
     }
+    .header-link-contact {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        }
     .basis {
         padding: 188px 0;
         max-width: 1440px;
@@ -180,7 +201,6 @@
     }
 
     .features {
-        font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
@@ -224,8 +244,8 @@
     .worker {
         width: calc((100% - 72px) / 4);
     }
-    .customers {
-        padding: 120px 15px;
+    .container-customers {
+        padding: 120px 0;
         max-width: 1128px;
     }
     .client {
@@ -239,6 +259,7 @@
     }
 .container-footer {
     flex-wrap: nowrap;
+    gap: unset;
 }
   .footer-base {
     margin-right: 120px;
