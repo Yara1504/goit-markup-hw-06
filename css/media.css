@@ -1,3 +1,8 @@
+@media screen and (max-width: 428px) {
+    .navigation {
+        max-width: 295px;
+    }
+}
 @media screen and (min-width: 428px) {
     .container {
         max-width: 428px;
@@ -26,7 +31,6 @@
         padding: 24px 16px;
     }
 }
-
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
@@ -140,6 +144,26 @@
 }
 .modal {
     width: 408px;
+}
+.main-portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+.navigation {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+.main-button {
+    padding: 12px 24px;
+}
+.main-img {
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.pictures {
+    width: calc((100% - 24px)/2);
+    position: relative;
 }
 }
 @media screen and (min-width: 1158px) {
@@ -270,4 +294,20 @@
   .footer-sub {
     width: unset;
   }
+  .main-portfolio {
+      padding-top: 100px;
+      padding-bottom: 120px;
+}
+.navigation {
+    margin-bottom: 72px;
+}
+.main-img {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.pictures {
+    width: calc((100% - 48px)/3);
+}
 }
