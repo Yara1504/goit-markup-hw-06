@@ -104,11 +104,6 @@
     .worker-container {
         max-width: 584px;
     }
-
-    .container-customers {
-        max-width: 584px;
-    }
-
     .client {
         gap: 72px 24px;
     }
@@ -225,6 +220,7 @@
     }
 
     .features {
+        font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
@@ -268,9 +264,8 @@
     .worker {
         width: calc((100% - 72px) / 4);
     }
-    .container-customers {
+    .customers {
         padding: 120px 0;
-        max-width: 1128px;
     }
     .client {
         gap: 24px;

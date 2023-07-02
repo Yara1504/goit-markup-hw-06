@@ -479,12 +479,10 @@ img {
 .soc-link:focus {
     background-color: var(--pressed-state);
 }
-
 .customers {
-    padding: 96px 15px;
+    padding: 96px;
     margin: 0 auto;
 }
-
 .client {
     display: flex;
     flex-wrap: wrap;
@@ -737,7 +735,7 @@ footer {
     color: var(--white-background);
 }
 .footer-button {
-    max-width: 165px;
+    min-width: 165px;
     height: 40px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
